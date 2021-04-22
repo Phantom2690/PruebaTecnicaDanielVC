@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     
     let productTableCell = String(describing: ProductTableCell.self)
     var dataProducts: [Product] = []
-    var searchText: String = "playera"
+    var searchText: String = ""
     var pageNumber = 1
     var totalNumRecs = 0
     var productsShowing = 0
@@ -32,7 +32,6 @@ class ViewController: UIViewController {
         
         tableView.dataSource = self
         productSearch.delegate = self
-        searchProducts()
     }
     
     @IBAction func clickOrder(_ sender: Any) {
